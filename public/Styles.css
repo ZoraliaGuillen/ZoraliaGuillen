@@ -1,0 +1,556 @@
+:root{
+    --purple1:#6C51A4;
+    --purple2: #4C3973;
+    --grey1: #1A1A1A;
+    --grey2: #313131;
+    --background1: #151515;
+    --background2: #111111;
+}
+
+*{
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+*::selection{
+    background-color: var(--purple1);
+    color: white;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--grey2);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--purple1);
+}
+
+body{
+    padding-left: 275px;
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0px 50px;
+}
+
+.heading{
+    font-size: 50px;
+    padding: 10px;
+    border-bottom: 1px solid #C2C2C2;
+    text-align: center;
+}
+
+.heading span{
+    color: var(--purple1);
+}
+
+/* Header Starts */
+
+header{
+    position: fixed;
+    background-color: var(--grey1);
+    top: 0; left: 0;
+    width: 275px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+header .user img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 5px solid var(--purple1);
+}
+
+header .user .name{
+    font-size: 25px;
+}
+
+header .user .post{
+    font-size: 15px;
+}
+
+header .icons i{
+    font-size: 15px;
+    background-color: white;
+    color: var(--purple1);
+    width: 30px;
+    height: 30px;
+    padding: 7.5px;
+    margin: 15px 2.5px;
+    border-radius: 50%;
+}
+
+header .icons i:hover{
+    background-color: #C2C2C2;
+}
+
+header .navbar ul a{
+    font-size: 15px;
+    background-color: var(--grey2);
+    width: 150px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 7.5px;
+    display: block;
+    text-align: left;
+}
+
+header .navbar ul a i{
+    color: var(--purple1);
+    width: 25px;
+    padding-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+header .navbar ul a:hover, header .navbar ul a i:hover{
+    background-color: var(--purple2);
+}
+
+#menu{
+    position: fixed;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    top: 10px; right: 10px;
+    padding: 10px 10px;
+    border-radius: 7.5px;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#menu .fa-bars, #menu .fa-times{
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+}
+
+.btn{
+    font-size: 15px;
+    font-weight: bold;
+    background: var(--purple1);
+    padding: 10px;
+    margin: 15px 0px;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+
+.btn i{
+    padding-right: 10px;
+}
+
+.btn:hover, .btn i:hover{
+    background-color: var(--purple2);
+}
+
+.inicio, .educacion, .portafolio{
+    background-color: var(--background1);
+}
+
+.sobre-mi, .experiencia, .contacto{
+    background-color: var(--background2);
+}
+
+.aboutme-container, .container-box, .container-portafolio, .container-contact{
+    padding: 25px 50px;
+}
+
+.container-box, .container-portafolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Header Ends */
+/* Section Home Starts */
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inicio h3{
+    font-size: 50px;
+}
+
+.inicio h1{
+    font-size: 75px;
+}
+
+.inicio p{
+    font-size: 25px;
+}
+
+/* Section Home Ends */
+/* Section SobreMi Starts */
+
+.aboutme-container > h2{
+    font-size: 25px;
+    color: var(--purple1);
+    padding-bottom: 15px;  
+    text-align: center;
+}
+
+.aboutme-container .info-aboutme p{
+    font-size: 20px;
+    text-align: left;
+}
+
+.aboutme-container .info-aboutme p span{
+    font-weight: bold;
+    color: var(--purple1);
+}
+
+.aboutme-container .teach{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.aboutme-container .teach .teach-box{   
+    width: 277.5px;
+    border: 1px solid #C2C2C2;
+    box-shadow: 2.5px 2.5px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.aboutme-container .teach .teach-box .tech-title{
+    font-size: 17.5px;
+    font-weight: bold;
+    background-color: var(--purple1);
+    padding: 5px;
+    text-align: center;
+}
+
+.aboutme-container .teach .teach-box .tech-tools-row{
+    background-color: white;  
+    height: 68.75px;
+    display: flex;
+}
+
+.aboutme-container .teach .teach-box .tech-tools-row .tech-tools img{
+    width: 68.75px;
+    height: 68.75px;
+    padding: 5px;
+}
+
+.tech-tools span{
+    position: absolute;
+    font-size: 15px;
+    background-color: var(--grey2);
+    padding: 5px 0.5px;
+    margin-top: -15px;
+    border-radius: 7.5px;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.tech-tools:hover span{
+    position: relative;
+    display: flex;
+}
+
+.tech-tools span::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 1px;
+    height: 1px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--grey2)
+}
+
+/* Section SobreMi Ends */
+/* Section Educación and Experiencia Starts */
+
+.container-box .box{
+    position: relative;
+    width: 400px;
+    padding: 7.5px 0px 7.5px 25px;
+    border-left: 2.5px solid #C2C2C2;
+}
+
+.container-box .box i{
+    position: absolute;
+    font-size: 20px;
+    background-color: var(--purple1);
+    top:0px; left: -20px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.container-box .box span{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--grey);
+    padding: 2.5px 5px;
+    border-radius: 7.5px;
+}
+
+.container-box .box h3{
+    font-size: 25px;
+    color: var(--purple1);
+    padding-top: 7.5px;
+}
+
+.container-box .box p{
+    font-size: 15px;
+}
+
+/* Section Educación and Experiencia Ends */
+/* Section Portafolio Starts */
+
+.box-portafolio{
+    position: relative;
+    width: 275px;
+    height: 175px;
+}
+
+.box-portafolio img{
+    width: 100%;
+    height: 100%;
+}
+
+.box-portafolio .hover-box-portafolio{
+    position: absolute;
+    background-color: var(--grey2);
+    top: 0px; left: 0px;
+    width: 275px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.box-portafolio .hover-box-portafolio h3{
+    font-size: 25px;
+    color: var(--purple1);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box-portafolio .hover-box-portafolio p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.box-portafolio .hover-box-portafolio:hover{
+    opacity: 1;
+}
+
+/* Section Portafolio Ends */
+/* Section Contacto Starts */
+
+.container-contact h2{
+    font-size: 30px;
+    color: var(--purple1);
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.container-contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: initial;
+    justify-content: space-between;
+}
+
+.box-contact{
+    width: 400px;
+}
+
+.box-contact > p{
+    font-size: 15x;
+}
+
+.box-contact .box-contact-infos{
+    display: flex;
+    padding-top: 25px;
+}
+
+.box-contact .box-contact-infos i{
+    font-size: 25px;
+    color: var(--purple1);
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.box-contact .box-contact-infos .info h3{
+    font-size: 25px;
+}
+
+.box-contact .box-contact-infos p{
+    font-size: 15px;
+}
+
+.box-contact .share i{
+    font-size: 15px;
+    background-color: white;
+    color: var(--purple1);
+    width: 30px;
+    height: 30px;
+    padding: 7.5px;
+    margin: 25px 2.5px;
+    border-radius: 50%;
+}
+
+.box-contact .share i:hover{
+    background-color: #C2C2C2;
+}
+
+.contact, .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact .form .input-box input{
+    width: 192.5px;
+    height: 35px;
+    padding: 15px 10px;
+    border-radius: 7.5px;
+}
+
+.contact textarea{
+    width: 400px;
+    height: 200px;
+    padding: 7.5px 10px;
+    border-radius: 7.5px;
+} 
+
+/* Section Contacto Ends */
+/* Media Queries */
+
+@media (max-width:1300px) and (min-width:1025px){
+
+    body{
+        padding-left: 0px;
+    }
+
+    header{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+  
+    header.toggle{
+        display: flex;
+    }
+
+}
+
+@media (max-width:1025px) and (min-width:510px){
+
+    body{
+        padding-left: 0px;
+    }
+
+    header{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+  
+    header.toggle{
+        display: flex;
+    }
+
+    .teach, .container-box, .container-portafolio, .container-contact{
+        justify-content: space-evenly !important;
+    }
+
+    .container-contact h2{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:510px){
+
+    body{
+        padding-left: 0px;
+    }
+
+    .inicio h3{
+        font-size: 40px;
+    }
+
+    .inicio h1{
+        font-size:60px;
+    }
+
+    header{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+  
+    header.toggle{
+        display: flex;
+    }
+
+    .aboutme-container, .container-box, .container-portafolio, .container-contact{
+        padding: 25px 0px !important;
+    }
+
+    .teach, .container-box, .container-portafolio, .container-contact, .contact, .input-box{
+        justify-content: space-evenly !important;
+    }
+
+    .container-box, .container-portafolio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-box .box, .box-portafolio, .box-portafolio .hover-box-portafolio, .contact .form .input-box input, .contact textarea{
+        width: 250px;
+    }
+
+}
